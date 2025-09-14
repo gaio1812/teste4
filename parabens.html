@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Cartinha 💌</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontes: Lora para texto, Great Vibes só no título -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0; padding: 0;
+      background:
+        radial-gradient(circle at center, rgba(255,255,255,0.4), rgba(0,0,0,0.4)),
+        url('fundo.png') center/cover no-repeat;
+      display: flex; align-items: center; justify-content: center;
+      height: 100vh;
+      font-family: 'Lora', serif;      /* corpo agora em Lora */
+    }
+
+    .pergaminho {
+      background: rgba(255,250,240,0.95);
+      padding: 30px 40px;
+      max-width: 520px; width: 92%;
+      border-radius: 25px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.06);
+      position: relative;
+      animation: aparecerFofo 1.5s ease;
+      text-align: center;
+      font-size: 1.4rem;                /* um pouquinho maior */
+      color: #8b4a5a;
+      line-height: 1.6;
+      border: 2px dashed #ff99bb;
+      box-sizing: border-box;
+    }
+
+    .pergaminho::before {
+      content: '💌';
+      font-size: 2em;
+      position: absolute;
+      top: -25px; left: 50%;
+      transform: translateX(-50%);
+      background: #ffe6f1;
+      padding: 4px 12px;
+      border-radius: 50%;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+
+    /* título agora em Great Vibes, maior e mais destacado */
+    .pergaminho h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;               /* maior */
+      color: #FF6B6B;
+      margin-bottom: 1rem;
+    }
+
+    .pergaminho p {
+      margin-bottom: 1.2rem;
+      text-align: left;
+    }
+
+    .assinatura {
+      margin-top: 40px;
+      font-size: 1.3rem;               /* ligeiramente maior */
+      color: #a05268;
+    }
+
+    @keyframes aparecerFofo {
+      from { opacity: 0; transform: scale(0.95) translateY(20px); }
+      to   { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    @media (max-width: 400px) {
+      .pergaminho {
+        font-size: 1.2rem;
+        padding: 15px 20px;
+        border-radius: 16px;
+      }
+      .pergaminho h1 {
+        font-size: 2.5rem;
+      }
+      .assinatura {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="pergaminho">
+    <h1>Parabéns Fefê! 🎉</h1>
+    <p>mb, desde que você entrou na minha vida, cada dia ganhou um pouco mais de cor</p>
+    <p>
+      Que todos os desejos do seu coração se tornem realidade e  
+      que eu possa estar ao seu lado em cada passo dessa jornada.
+    </p>
+    <div class="assinatura">
+     <srtrong> Então inspira fundo, mb, apaga as velas e faz um pedido gigante,  
+      porque eu já estou contando cada segundo para viver tudo isso com você.  </srtrong>
+      <strong><br>Te amo hoje e sempre! ❤️🎂</strong><br>
+    
+  </div>
+</body>
